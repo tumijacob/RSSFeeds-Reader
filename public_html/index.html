@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+<div class="container-fluid">
+    <div data-ng-controller="FeedCtrl">
+        <div class="row-fluid">
+            <h4>Read RSS Feeds</h4>
+            
+                <div class="input-prepend span12">
+              
+                <ul>
+                  <li><a href="#" ng-click="feedSrc='http://rss.iolmobile.com/news';loadFeed($event" >News</a></li>
+                  <li><a href="#" ng-click="feedSrc=' http://rss.iolmobile.com/sport';loadFeed($event)">Sports</a></li>
+                  <li><a href="#" ng-click="feedSrc='http://www.iol.co.za/news/politics';loadFeed($event)">Politics</a></li>                  
+                  
+                </ul>
+        
+    </div>
+</div>
+<script src="angular.min.js"></script>
+    
