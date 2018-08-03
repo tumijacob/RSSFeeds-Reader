@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<script src="lib/angular.js"></script>
+<script src="lib/ui-bootstrap-tpls.js"></script>
+<script src="lib/angular-loader.js"></script>
+<script src="lib/angular-messages.js"></script>
+<script src="lib/angular-mocks.js"></script>
+<script src="lib/angular-resource.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="lib/angular-scenario.js"></script>
+<script src="lib/ng-table.min.js"></script>
+<script src="lib/loading-bar.js"></script>
+
+<script src="app.js"></script>
+<script src="app/services/readFeedsService.js"></script>
+<script src="app/controllers/feeds.js"></script>
+
+
+<div class="container-fluid">
+    <div ng-app="RSSFeedApp">
+        <div class="row-fluid">
+            <h4>Read RSS Feeds</h4>
+            
+                <div class="input-prepend span12" ng-controller="FeedCtrl">
+              
+                <ul>
+                  <li><a href="#" ng-click="feedSrc='https://www.reuters.com/tools/rss';loadFeed($event)" >Entertainments</a></li>
+                  <li><a href="#" ng-click="feedSrc=' http://rss.iolmobile.com/sport';loadFeed($event)">Sports</a></li>
+                  <li><a href="#" ng-click="feedSrc='http://www.iol.co.za/news/politics';loadFeed($event)">Politics</a></li>                  
+                  
+                </ul>
+        
+    </div>
+</div>
+
+    
